@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 
 import { query } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 async function getRanking(userId) {
   const sql = `SELECT coachId, coachName, points, tcoachrk06.rankingPosition FROM (
 SELECT rankingPosition FROM tcoach02

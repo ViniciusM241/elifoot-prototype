@@ -15,8 +15,6 @@ export const metadata = {
   description: "Prototipagem de reformulação de layout do jogo Elifoot",
 };
 
-export const dynamic = "force-dynamic";
-
 export default async function RootLayout({ children, params }) {
   const namespaces = ["common"];
   const { t } = await initTranslations(params.locale, namespaces);
