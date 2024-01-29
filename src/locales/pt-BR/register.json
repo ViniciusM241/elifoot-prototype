@@ -1,0 +1,28 @@
+{
+  "title": "Cadastrar no Elifoot",
+  "subtitle": "Preencha o formulário para finalizar o registro na plataforma",
+  "form": {
+    "name": {
+      "label": "Nome:",
+      "placeholder": "Digite seu nome"
+    },
+    "email": {
+      "label": "E-mail:",
+      "placeholder": "Digite seu e-mail"
+    },
+    "confirmEmail": {
+      "label": "Confirmar e-mail:",
+      "placeholder": "Confirmar seu e-mail"
+    },
+    "password": {
+      "label": "Senha:",
+      "placeholder": "Digite sua senha"
+    },
+    "confirmPassword": {
+      "label": "Confirmar senha:",
+      "placeholder": "Confirmar sua senha"
+    },
+    "submitBtn": "Cadastrar",
+    "login": "Já tem uma conta?"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "main": {
+    "title": "DESDE 1987",
+    "description": "Considerado por muchos uno de los juegos más adictivos de la historia",
+    "description2": "Sé parte de la comunidad comenzando tu viaje aquí",
+    "signBtn": "Registrar"
+  },
+  "versions": {
+    "title": "Versiones disponibles",
+    "description": "Consulta las versiones disponibles de Elifoot, cada versión permite nuevas experiencias en el campo de fútbol.",
+    "card": {
+      "code": "código: {{code}}",
+      "get": "compra"
+    }
+  },
+  "rankings": {
+    "title": "Clasificaciones",
+    "description": "Gana partidos reales y participa en clasificaciones con otros jugadores reales",
+    "card": {
+      "world": {
+        "title": "Mundial",
+        "link": "verlo todo"
+      }
+    }
+  }
+}

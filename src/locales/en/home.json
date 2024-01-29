@@ -1,0 +1,26 @@
+{
+  "main": {
+    "title": "SINCE 1987,",
+    "description": "Considered by many one of the most addictive games ever",
+    "description2": "Be part of the community by starting your journey here",
+    "signBtn": "Register"
+  },
+  "versions": {
+    "title": "Available versions",
+    "description": "Check the available versions of Elifoot, each version enables new experiences on the football field.",
+    "card": {
+      "code": "code: {{code}}",
+      "get": "purchase"
+    }
+  },
+  "rankings": {
+    "title": "Rankings",
+    "description": "Win real matches and participate in rankings with other real players.",
+    "card": {
+      "world": {
+        "title": "World",
+        "link": "see all"
+      }
+    }
+  }
+}

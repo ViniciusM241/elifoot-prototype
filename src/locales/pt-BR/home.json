@@ -1,0 +1,26 @@
+{
+  "main": {
+    "title": "DESDE 1987,",
+    "description": "Considerado por muitos um dos mais viciantes jogos de sempre",
+    "description2": "Faça parte da comunidade iniciando sua jornada aqui",
+    "signBtn": "Cadastrar"
+  },
+  "versions": {
+    "title": "Versões disponíveis",
+    "description": "Verifique as versões disponíveis do Elifoot, cada versão possibilita novas experiências no campo de futebol.",
+    "card": {
+      "code": "código: {{code}}",
+      "get": "adquirir"
+    }
+  },
+  "rankings": {
+    "title": "Rankings",
+    "description": "Vença partidas de verdade e participe de rankings com outros jogadores reais.",
+    "card": {
+      "world": {
+        "title": "Mundial",
+        "link": "ver tudo"
+      }
+    }
+  }
+}

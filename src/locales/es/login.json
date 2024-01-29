@@ -1,0 +1,16 @@
+{
+  "title": "Entrar Elifoot",
+  "subtitle": "Ingresa tus credenciales para acceder a la plataforma",
+  "form": {
+    "email": {
+      "label": "E-mail:",
+      "placeholder": "Escribe tu e-mail"
+    },
+    "password": {
+      "label": "Contraseña:",
+      "placeholder": "Escribe tu contraseña"
+    },
+    "submitBtn": "Entrar",
+    "register": "¿Aún no tienes una cuenta?"
+  }
+}

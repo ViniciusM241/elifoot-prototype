@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Home",
+    "history": "History",
+    "contact": "Contact",
+    "signBtn": "SignIn/Register",
+    "privacyPolicy": "Privacy Policy",
+    "licenseContract": "License Contract",
+    "copyright": "All Rights Reserved"
+  },
+  "form": {
+    "validationWrong": "Fill it correctly"
+  }
+}

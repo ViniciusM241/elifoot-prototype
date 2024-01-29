@@ -1,0 +1,20 @@
+{
+  "title": "Profile",
+  "ranking": {
+    "title": "Current position in the ranking"
+  },
+  "info": {
+    "title": "Info",
+    "edit": "edit",
+    "info": {
+      "name": "Name:",
+      "email": "E-mail:",
+      "team": "Team:",
+      "status": "Status: "
+    }
+  },
+  "pointsByGame": {
+    "title": "Score per game",
+    "viewMore": "view more"
+  }
+}

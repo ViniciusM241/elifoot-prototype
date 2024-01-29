@@ -1,0 +1,28 @@
+{
+  "title": "Regístrate en Elifoot",
+  "subtitle": "Complete el formulario para completar el registro en la plataforma",
+  "form": {
+    "name": {
+      "label": "Nombre:",
+      "placeholder": "Escriba su nombre"
+    },
+    "email": {
+      "label": "E-mail:",
+      "placeholder": "Escribe tu e-mail"
+    },
+    "confirmEmail": {
+      "label": "Confirmar e-mail:",
+      "placeholder": "Confirmar e-mail"
+    },
+    "password": {
+      "label": "Contraseña:",
+      "placeholder": "Escribe tu contraseña"
+    },
+    "confirmPassword": {
+      "label": "Confirmar seña:",
+      "placeholder": "Confirmar la contraseña"
+    },
+    "submitBtn": "Registrar",
+    "login": "¿Ya tienes una cuenta?"
+  }
+}

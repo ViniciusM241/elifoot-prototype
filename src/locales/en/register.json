@@ -1,0 +1,28 @@
+{
+  "title": "Sign up to Elifoot",
+  "subtitle": "Fill the form to finish your register to the platform",
+  "form": {
+    "name": {
+      "label": "Name:",
+      "placeholder": "Typer your name"
+    },
+    "email": {
+      "label": "E-mail:",
+      "placeholder": "Typer your e-mail"
+    },
+    "confirmEmail": {
+      "label": "Confirm e-mail:",
+      "placeholder": "Confirm your e-mail"
+    },
+    "password": {
+      "label": "Password:",
+      "placeholder": "Type your password"
+    },
+    "confirmPassword": {
+      "label": "Confirm password:",
+      "placeholder": "Confirm your password"
+    },
+    "submitBtn": "Sign up",
+    "login": "Already have an account?"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Log in to Elifoot",
+  "subtitle": "Type your credentials to access the platform",
+  "form": {
+    "email": {
+      "label": "E-mail:",
+      "placeholder": "Typer your e-mail"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Type your password"
+    },
+    "submitBtn": "Log In",
+    "register": "Don`t you have an account?"
+  }
+}
