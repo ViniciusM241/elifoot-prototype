@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { query } from "@/lib/db";
+import { verifyJwt } from "@/lib/jwt";
 
 export const dynamic = "force-dynamic";
 
@@ -52,13 +53,9 @@ async function getScoreByGame(userId) {
 
 export async function GET(req, res) {
   try {
-    console.log("aqui antes", req.cookies.get("locale"));
-    if (!req.cookies.get("locale")?.value) {
-      console.log("aqui");
-      return NextResponse.json({ message: "BadRequest" }, { status: 400 });
-    }
-
-    const { userId } = JSON.parse(req.cookies.get("locale")?.value);
+    const token = req.headers.get("authorization")?.split(" ")[1];
+    const decoded = verifyJwt(token);
+    const userId = decoded.id;
 
     const [ranking, info, scoreByGame] = await Promise.all([
       (async () => await getRanking(userId))(),
