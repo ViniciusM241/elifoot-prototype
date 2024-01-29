@@ -15,8 +15,6 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 function useOutsideClick(ref, callback) {
-  const { t } = useTranslation();
-
   useEffect(() => {
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
@@ -31,7 +29,7 @@ function useOutsideClick(ref, callback) {
   }, [ref, callback]);
 }
 
-export default function Profile({ className, params }) {
+export default function Profile() {
   const pathname = usePathname();
   const { t } = useTranslation();
   const menuRef = useRef();
@@ -47,19 +45,18 @@ export default function Profile({ className, params }) {
   useEffect(() => {
     async function get() {
       const token = getToken();
-      setUser(null);
-      if (token) {
-        const res = await api.get("/users/perfil", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
 
-        if (res?.status === 200) {
-          setUser(res.data);
-        } else {
-          setUser(null);
-        }
+      const res = await api.get("/users/perfil", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (res?.status === 200) {
+        setUser(res.data);
+      } else {
+        console.log("aqui");
+        setUser(null);
       }
     }
 
