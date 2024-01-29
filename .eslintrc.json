@@ -8,6 +8,11 @@
       "version": "detect"
     }
   },
+  "globals": {
+    "process": true,
+    "module": true,
+    "require": true
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",

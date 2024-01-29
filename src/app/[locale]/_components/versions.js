@@ -7,7 +7,9 @@ export default async function Versions({ className, t }) {
   try {
     const res = await api.get("/versions");
     data = res.data;
-  } catch (err) {}
+  } catch (err) {
+    console.log(err);
+  }
 
   return (
     <section id="versions" className={className}>
