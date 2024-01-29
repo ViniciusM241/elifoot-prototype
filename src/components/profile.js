@@ -55,7 +55,6 @@ export default function Profile() {
       if (res?.status === 200) {
         setUser(res.data);
       } else {
-        console.log("aqui");
         setUser(null);
       }
     }
