@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import Button from "./button";
 
 import api from "@/helpers/api";
-import { getToken, removeToken } from "@/helpers/token";
+import { getToken } from "@/helpers/token";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
@@ -57,7 +57,6 @@ export default function Profile({ className, params }) {
           setUser(res.data);
         } else {
           setUser(null);
-          removeToken();
         }
       }
     }
