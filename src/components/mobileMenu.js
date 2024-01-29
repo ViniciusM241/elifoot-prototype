@@ -5,10 +5,14 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import api from "@/helpers/api";
+import { getToken } from "@/helpers/token";
+
 export default function MobileMenu() {
   const { t } = useTranslation();
   const pathname = usePathname();
   const [isActive, setIsActive] = useState(false);
+  const [user, setUser] = useState();
 
   const toggleActive = () => {
     setIsActive(!isActive);
@@ -16,6 +20,28 @@ export default function MobileMenu() {
 
   useEffect(() => {
     setIsActive(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    async function get() {
+      const token = getToken();
+      setUser(null);
+      if (token) {
+        const res = await api.get("/users/perfil", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        if (res?.status === 200) {
+          setUser(res.data);
+        } else {
+          setUser(null);
+        }
+      }
+    }
+
+    get();
   }, [pathname]);
 
   return (
@@ -67,9 +93,20 @@ export default function MobileMenu() {
                   {t("common:nav.contact")}
                 </Link>
               </li>
-              <li>
-                <Link href={"/login"}>{t("common:nav.signBtn")}</Link>
-              </li>
+              {user ? (
+                <>
+                  <li className="mb-xxxs">
+                    <Link href={"/perfil"}>{t("common:nav.profile")}</Link>
+                  </li>
+                  <li>
+                    <Link href={"/sair"}>{t("common:nav.logout")}</Link>
+                  </li>
+                </>
+              ) : (
+                <li>
+                  <Link href={"/login"}>{t("common:nav.signBtn")}</Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>

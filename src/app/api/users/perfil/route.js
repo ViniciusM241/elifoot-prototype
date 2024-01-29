@@ -52,7 +52,9 @@ async function getScoreByGame(userId) {
 
 export async function GET(req, res) {
   try {
+    console.log("aqui antes", req.cookies.get("locale"));
     if (!req.cookies.get("locale")?.value) {
+      console.log("aqui");
       return NextResponse.json({ message: "BadRequest" }, { status: 400 });
     }
 

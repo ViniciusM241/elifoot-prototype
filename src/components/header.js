@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 import logo from "../../public/logo.svg";
-import Button from "./button";
 import LanguageChanger from "./languageChanger";
 import MobileMenu from "./mobileMenu";
 import Profile from "./profile";

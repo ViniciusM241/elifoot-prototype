@@ -15,6 +15,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 function useOutsideClick(ref, callback) {
+  const { t } = useTranslation();
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
@@ -79,10 +81,10 @@ export default function Profile({ className, params }) {
             <div className="float-menu">
               <ul>
                 <li className="float-menu__item">
-                  <Link href={"/perfil"}>Perfil</Link>
+                  <Link href={"/perfil"}>{t("common:nav.profile")}</Link>
                 </li>
                 <li className="float-menu__item">
-                  <Link href={"/sair"}>Sair</Link>
+                  <Link href={"/sair"}>{t("common:nav.logout")}</Link>
                 </li>
               </ul>
             </div>

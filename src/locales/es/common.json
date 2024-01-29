@@ -6,7 +6,9 @@
     "signBtn": "Entrar/Registrar",
     "privacyPolicy": "Política de Privacidad",
     "licenseContract": "Acuerdo de licencia",
-    "copyright": "Todos los derechos reservados"
+    "copyright": "Todos los derechos reservados",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión"
   },
   "form": {
     "validationWrong": "Completar correctamente"

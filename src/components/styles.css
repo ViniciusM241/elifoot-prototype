@@ -211,6 +211,7 @@ input.form-control:focus {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+  z-index: 100;
 }
 
 .header__mobile-nav {

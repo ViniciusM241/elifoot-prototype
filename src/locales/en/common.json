@@ -6,7 +6,9 @@
     "signBtn": "SignIn/Register",
     "privacyPolicy": "Privacy Policy",
     "licenseContract": "License Contract",
-    "copyright": "All Rights Reserved"
+    "copyright": "All Rights Reserved",
+    "profile": "Profile",
+    "logout": "Log out"
   },
   "form": {
     "validationWrong": "Fill it correctly"
