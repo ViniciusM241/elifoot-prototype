@@ -220,6 +220,7 @@ input.form-control:focus {
   flex-direction: column;
   align-items: center;
   font-size: 24px;
+  padding: 0;
 }
 
 .header__mobile-nav a {
